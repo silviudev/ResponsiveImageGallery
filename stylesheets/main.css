@@ -1,0 +1,143 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar{
+	background: black;
+	color: white;
+	height: 20%;
+	width: 100%;
+}
+
+.navbar a{
+	text-decoration: none;
+	font-size: 3em;
+}
+
+.navbar a:visited{
+	color: white;
+}
+
+.navbar a:link{
+	color: white;
+}
+
+.leftmost{
+	margin-right: 18%;
+}
+
+.navbar a:hover{
+	color: lightgray;
+}
+
+.gallery{
+	margin: 0 auto;
+	width: 90%;
+}
+
+.gallery-item{
+	width: 30%;
+	height: 250px;
+	display:inline-block;
+	margin: 0.5%;
+	padding: 0.5%;
+	border: 2px solid black;
+}
+
+.gallery-item img{
+	width:100%;
+	height: 100%;
+	margin: auto;
+	cursor: pointer;
+}
+
+#modal{
+	width: 50%;
+	height: 500px;
+	border: 2px solid black;
+	margin: 0 auto;
+	z-index: 1000;
+	position: absolute;
+	top: 11%;
+	right: 26%;
+	padding-bottom: 40px;
+	cursor: default;
+	background: black;
+}
+
+#modal img{
+	width:100%;
+	height: 100%;
+}
+
+#modal button{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.4em;
+}
+
+	
+.hidden{
+	display: none;
+}
+
+.fade{
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 1050px){
+	.navbar a{
+		font-size: 2em;
+	}
+	
+	.leftmost{
+		margin-right: 16%;
+	}
+	
+	.gallery-item{
+		width: 46%;
+		height: 250px;
+		display:inline-block;
+		margin: 0.5%;
+		padding: 0.5%;
+		border: 1px solid black;
+	}
+	
+	#modal{
+		width:60%;
+		right: 21%;
+	}
+}
+
+@media screen and (max-width:650px){
+	.navbar a{
+		display: block;
+		font-size: 1.5em;
+		margin-right: 8%;
+		width: 100%;
+	}
+	
+	.leftmost{
+		border-bottom: 2px solid white;
+	}
+	
+	.gallery-item{
+		width: 80%;
+		height: 200px;
+		display: block;
+		margin: 5px auto;
+		padding: 0.5%;
+		border: 2px solid black;
+	}
+	
+	#modal{
+		width:85%;
+		right: 5%;
+		top: 20%;
+		height: 400px;
+	}
+	
+	
+}
